@@ -26,7 +26,17 @@ function App() {
         </ul>
         <h3>Inventory:</h3>
         <div>
-          <p>Empty</p>
+          <ul className="grid grid-cols-3 gap-1 h-52 w-52">
+            <li className="border border-slate-300 bg-slate-200 rounded-lg"></li>
+            <li className="border border-slate-300 bg-slate-200 rounded-lg"></li>
+            <li className="border border-slate-300 bg-slate-200 rounded-lg"></li>
+            <li className="border border-slate-300 bg-slate-200 rounded-lg"></li>
+            <li className="border border-slate-300 bg-slate-200 rounded-lg"></li>
+            <li className="border border-slate-300 bg-slate-200 rounded-lg"></li>
+            <li className="border border-slate-300 bg-slate-200 rounded-lg"></li>
+            <li className="border border-slate-300 bg-slate-200 rounded-lg"></li>
+            <li className="border border-slate-300 bg-slate-200 rounded-lg"></li>
+          </ul>
         </div>
       </div>
     </main>
