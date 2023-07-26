@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CharacterClass } from "./models/characterClass";
+import { CharacterClass } from "./models/CharacterClass";
 
 function App() {
   const [classType, setClassType] = useState("archer");
