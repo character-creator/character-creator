@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { CharacterClass } from "./models/characterClass";
 
 function App() {
-  const [characterClass, setCharacterClass] = useState("archer");
+  const [classType, setClassType] = useState("archer");
+  const newClass = new CharacterClass(classType);
 
   return (
     <main className="h-full container mx-auto">
@@ -9,8 +11,8 @@ function App() {
       <div className="bg-slate-100 max-w-xl mx-auto">
         <h3>Class:</h3>
         <select
-          value={characterClass}
-          onChange={(e) => setCharacterClass(e.target.value)}
+          value={classType}
+          onChange={(e) => setClassType(e.target.value)}
         >
           <option value="warrior">Warrior</option>
           <option value="archer">Archer</option>
@@ -18,9 +20,9 @@ function App() {
         </select>
         <h3>Attributes:</h3>
         <ul>
-          <li>Strength: 1</li>
-          <li>Agility: 1</li>
-          <li>Intelligence: 1</li>
+          <li>Strength: {newClass.attributes.strength}</li>
+          <li>Dexterity: {newClass.attributes.dexterity}</li>
+          <li>Intelligence: {newClass.attributes.inteligence}</li>
         </ul>
         <h3>Inventory:</h3>
         <div>
